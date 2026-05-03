@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!--
+    Default Simple Manifest
+    =======================
+    简化版清单文件，仅包含基础的远程仓库定义和平台包含。
+    使用 repo 工具初始化：repo init -u <manifest-url> -m default_simple.xml
+  -->
+
+  <!-- ============================================================
+       远程仓库定义 (Remote Definitions)
+       - name:     远程仓库名称，project 通过 remote 属性引用
+       - fetch:    基础 URL，project 的 name 拼接在此之后
+       - revision: 默认分支/标签
+       - review:   Gerrit 代码审查服务器地址
+       ============================================================ -->
+
+  <!-- AOSPA - Paranoid Android 上游仓库，使用相对路径 fetch -->
+  <remote  name="aospa"
+           fetch=".."
+           review="gerrit-ssh.aospa.co"
+           revision="vauxite"/>
+
+  <!-- Bitbucket - 私有代码托管平台 -->
+  <remote  name="bitbucket"
+           fetch="https://bitbucket.org"
+           revision="vauxite" />
+
+  <!-- GitHub - 公开代码托管平台 (HTTPS) -->
+  <remote  name="github"
+           fetch="https://github.com" />
+
+  <!-- ============================================================
+       默认配置 (Default Settings)
+       未指定 remote 的 project 将使用 clo-la。
+       注意：clo-la 远程仓库需在其他 include 文件中定义。
+       ============================================================ -->
+  <default remote="clo-la"/>
+
+  <!-- ============================================================
+       平台包含文件 (Platform Includes)
+       引入 system.xml 中的项目定义（包含 clo-la 远程仓库定义）。
+       ============================================================ -->
+  <include name="system.xml"/>
+
+  <!-- ============================================================
+       自定义机器人项目 (Custom Robotics Projects)
+       占位项目 - 请将 org/ 替换为实际的仓库组织/用户名。
+       ============================================================ -->
+
+  <!-- 导航模块 - GitHub 仓库 -->
+  <project path="robotics/navigation"  name="org/android_robotics_nav"        remote="github"     revision="main" />
+
+</manifest>

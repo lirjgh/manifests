@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!--
+    Multi-Robots Manifest
+    =====================
+    此清单文件用于管理多个远程仓库，支持多机器人项目的代码同步。
+    使用 repo 工具初始化：repo init -u <manifest-url> -m manifest_multiRobots.xml
+    
+    远程仓库说明：
+    - github:    GitHub HTTPS 方式访问，用于公开仓库
+    - gitlab:    GitLab HTTPS 方式访问，用于内部仓库
+    - bitbucket: Bitbucket HTTPS 方式访问，用于私有仓库
+  -->
+
+  <!-- ============================================================
+       远程仓库定义 (Remote Definitions)
+       每个 remote 定义一个代码托管平台的访问方式。
+       - name:     远程仓库的名称，在 project 中通过 remote 属性引用
+       - fetch:    仓库的基础 URL，project 的 name 会拼接在此 URL 之后
+       - revision: 默认分支或标签，project 可覆盖此值
+       ============================================================ -->
+
+  <!-- GitHub - 公开代码托管平台 (HTTPS) -->
+  <remote name="github"
+          fetch="git@github.com"
+          revision="main" />
+
+  <!-- Bitbucket - 私有代码托管平台 (HTTPS) -->
+  <remote name="origin"
+          fetch="git@github.com"
+          revision="main" />
+
+  <!-- ============================================================
+       默认配置 (Default Settings)
+       未指定 remote/revision 的 remoter\ 将使用此默认值。
+       ============================================================ -->
+  <default remote="origin" revision="main" sync-j="4" sync_s="true"/> 
+
+  <!-- ============================================================
+       平台包含文件 (Platform Includes)
+       通过 include 引入其他清单文件，实现模块化管理。
+       ============================================================ -->
+  <include name="multiRobots.xml"/>
+</manifest>

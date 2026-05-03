@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- ============================================================
+       自定义机器人项目 (Custom Robotics Projects)
+       占位项目 - 请将 org/ 替换为实际的仓库组织/用户名。
+       
+       属性说明：
+       - path:     本地检出路径（相对于工作区根目录）
+       - name:     远程仓库路径（拼接在 remote.fetch 之后）
+       - remote:   使用的远程仓库定义名称
+       - revision: 分支名、标签名或 commit hash
+       ============================================================ -->
+ 
+
+  <!-- robotics项目-->
+  <!-- Psi0模块 - GitHub 仓库 -->
+  <project path="physical-superintelligence-lab/Psi0"  name="physical-superintelligence-lab/Psi0"        remote="github"    revision="main" />
+  <project path="Physical-Intelligence/openpi"  name="Physical-Intelligence/openpi"        remote="github"    revision="main" />
+  <project path="ApolloAuto/apollo"  name="ApolloAuto/apollo"        remote="github"    revision="main" />
+  <project path="autowarefoundation/autoware"  name="autowarefoundation/autoware"        remote="github"    revision="main" />
+  <project path="openvla/openvla"  name="openvla/openvla"        remote="github"    revision="main" />
+  <project path="NVIDIA/Isaac-GR00T"  name="NVIDIA/Isaac-GR00T"        remote="github"    revision="main" />
+
+
+  <!-- simulation项目-->
+  <!-- webots 模块 - GitLab 仓库 -->
+  <project path="cyberbotics/webots"        name="cyberbotics/webots"       remote="github"    revision="main" />
+  <project path="gazebosim/gz-sim"        name="gazebosim/gz-sim"       remote="github"    revision="main" />
+  <project path="google-deepmind/mujoco"        name="google-deepmind/mujoco"        remote="github"    revision="main" />
+  <project path="newton-physics/newton"        name="newton-physics/newton"       remote="github"    revision="main" />
+  <project path="OpenDriveLab/WorldEngine"        name="OpenDriveLab/WorldEngine"       remote="github"    revision="main" />
+
+
+  <!--嵌入系统项目-->
+  <!-- FreeRTOS模块 - GitHub 仓库 -->
+  <project path="FreeRTOS/FreeRTOS"  name="FreeRTOS/FreeRTOS" remote="github"    revision="main" />
+  <project path="zephyrproject-rtos/zephyr"  name="zephyrproject-rtos/zephyr" remote="github"    revision="main" />
+  <project path="eclipse-threadx/threadx"  name="eclipse-threadx/threadx" remote="github"    revision="main" />
+  <project path="ros2/ros2"  name="ros2/ros2" remote="github"    revision="main" />
+ 
+  <!-- 工具项目 - Bitbucket 仓库 -->
+
+
+  <!-- 其他项目 - GitLab 仓库 -->
+
+
+</manifest>
