@@ -15,14 +15,14 @@
   <!-- robotics项目-->
   <project path="Psi0"  name="physical-superintelligence-lab/Psi0" remote="github"   revision="main" />
   <project path="openpi"  name="Physical-Intelligence/openpi" remote="github"   revision="main" />
-  <project path="apollo"  name="ApolloAuto/apollo"   remote="github"  revision="main" />
+  <project path="apollo"  name="ApolloAuto/apollo"   remote="github"  revision="master" />
   <project path="autoware"  name="autowarefoundation/autoware" remote="github"  revision="main" />
   <project path="openvla"  name="openvla/openvla"     remote="github"    revision="main" />
   <project path="Isaac-GR00T"  name="NVIDIA/Isaac-GR00T"   remote="github"  revision="main" />
 
 
   <!-- simulation项目-->
-  <project path="webots"   name="cyberbotics/webots"        remote="github"    revision="main" />
+  <project path="webots"   name="cyberbotics/webots"        remote="github"    revision="master" />
   <project path="gz-sim"   name="gazebosim/gz-sim"          remote="github"    revision="main" />
   <project path="mujoco"   name="google-deepmind/mujoco"    remote="github"    revision="main" />
   <project path="newton"   name="newton-physics/newton"     remote="github"    revision="main" />
@@ -32,13 +32,13 @@
   <!--嵌入系统项目-->
   <project path="FreeRTOS"  name="FreeRTOS/FreeRTOS"   remote="github"    revision="main" />
   <project path="zephyr"    name="zephyrproject-rtos/zephyr"  remote="github"    revision="main" />
-  <project path="threadx"   name="eclipse-threadx/threadx"  remote="github"    revision="main" />
+  <project path="threadx"   name="eclipse-threadx/threadx"  remote="github"    revision="master" />
   <project path="ros2"      name="ros2/ros2"   remote="github"    revision="main" />
  
   <!-- 工具项目 -->
 
 
   <!-- 其他项目 -->
-
+  <project path="RobotProjects"  name="lirjgh/RobotProjects"  remote="github"    revision="master" />
 
 </manifest>
