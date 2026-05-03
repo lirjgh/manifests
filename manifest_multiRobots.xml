@@ -23,12 +23,12 @@
 
   <!-- GitHub - 公开代码托管平台 (HTTPS) -->
   <remote name="github"
-          fetch="git@github.com"
+          fetch="ssh://git@github.com"
           revision="main" />
 
   <!-- Bitbucket - 私有代码托管平台 (HTTPS) -->
   <remote name="origin"
-          fetch="git@github.com"
+          fetch="ssh://git@github.com"
           revision="main" />
 
   <!-- ============================================================
