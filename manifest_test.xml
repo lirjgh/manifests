@@ -3,6 +3,6 @@
   <remote name="origin" fetch="ssh://git@github.com"  revision="main" />
   <default remote="origin" revision="main" sync-j="4" sync_s="true"/> 
 
-  <project path="Manifests_Repos/Psi0"  name="lirjgh/Psi0" remote="origin"   revision="main"/>
+  <project path="Psi0"  name="lirjgh/Psi0" remote="origin"   revision="main"/>
 
 </manifest>
